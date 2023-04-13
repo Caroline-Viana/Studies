@@ -1,0 +1,11 @@
+.botao_enviar{
+    border: 1px solid #fff;
+    padding: 0.5rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    &:hover{
+        background-color: #587b8f;
+        transition: 0.3s;
+    }
+}

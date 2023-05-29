@@ -1,0 +1,53 @@
+.lista {
+    background-color: rgb(5, 51, 88);
+    box-shadow: 2px 4px 4px #0000009F;
+    padding: 2rem;
+    width: 20%;
+    text-align: center;
+
+    &_titulo {
+        margin-bottom: 1.5rem;
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
+
+    &_tarefas {
+        overflow-y: scroll;
+        scrollbar-width: thin;
+
+        .tarefas {
+            display: flex;
+            justify-content: space-between;
+            gap: 4rem;
+            margin-bottom: 1rem;
+            background-color: #4D4D4D;
+            border-radius: 8px;
+            box-shadow: 2px 4px 4px #0000009F;
+            padding: 12px;
+            cursor: pointer;
+        }
+
+        .itemSelecionado {
+            background-color: #2e2e2e;
+            box-shadow: 2px 4px 4px #0000009F;
+        }
+
+        .itemCompletado {
+            background-color: #566F42;
+            cursor: auto;
+
+            .concluido {
+                display: block;
+                background-image: url('../../assets/check-mark.svg');
+                background-repeat: no-repeat;
+                background-size: 38px 38px;
+                position: absolute;
+                top: 50%;
+                right: 12px;
+                transform: translateY(-50%);
+                width: 42px;
+                height: 43px;
+            }
+        }
+    }
+}

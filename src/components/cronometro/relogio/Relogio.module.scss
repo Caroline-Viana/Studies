@@ -1,0 +1,21 @@
+.relogio{
+    display: flex;
+    justify-content: center;
+}
+.relogioNumero{
+    background-color: #5D677C;
+    box-shadow: 2px 2px 4px #2B2B2B inset;
+    padding: 1rem;
+    font-size: 3rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.relogioDivisao {
+    display: flex;
+    align-items: center;
+    height: 4.2rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+}

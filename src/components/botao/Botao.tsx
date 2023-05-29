@@ -1,12 +1,13 @@
-import React from 'react'
-import './Botao.scss'
+import React, { Component } from 'react'
+import style from './Botao.module.scss'
 
-function Botao() {
-  return (
-    <>
-        <button className='botao_enviar'>Enviar</button>
-    </>
-  )
+export default class Botao extends Component<{type?: "button" | "submit" | "reset" | undefined}>{
+  render() {
+    const { type = "button"} = this.props;
+    return (
+      <>
+        <button type={type} className={style.botao_enviar}>{this.props.children}</button>
+      </>
+    )
+  }
 }
-
-export default Botao

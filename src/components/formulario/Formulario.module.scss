@@ -4,16 +4,15 @@
     background-color: rgb(5, 51, 88);
     box-shadow: 2px 4px 4px #0000009F;
     padding: 2rem;
-    width: 20%;
     gap: 2rem;
-    .formulario_tarefa-opcao{
+    .formulario_tarefa_opcao{
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
         .opcao_item{
             font-size: 1.1rem;
         }
-        .opcao_item-input{
+        .opcao_item_input{
             padding: 0.5rem;
             border-radius: 20px;
             border: unset;
